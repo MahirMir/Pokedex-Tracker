@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
-const CONNECTION_URL = 'mongodb+srv://tetsuiga7704:pokemondigimoN1@cluster0.5cana.mongodb.net/<dbname>?retryWrites=true&w=majority';
+const CONNECTION_URL = 'mongodb+srv://username:password@cluster0.5cana.mongodb.net/<dbname>?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true}) //14:06
